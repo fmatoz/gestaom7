@@ -1,29 +1,31 @@
-# Gestão M7 — versão estática
+# Site da Gestão M7
 
-Página completa em três arquivos, pronta para hospedar no GitHub Pages.
+Landing page institucional publicada na Vercel em <https://www.gestaom7.com.br/>.
 
-```
-static-site/
-├── index.html   # estrutura e conteúdo
-├── styles.css   # design system e responsividade
-└── script.js    # conteúdo dinâmico, links de WhatsApp e animações
-```
+## Estrutura
 
-## Como publicar no GitHub Pages
+- `index.html`: conteúdo, metadados sociais e dados estruturados.
+- `styles.css`: identidade visual e responsividade.
+- `script.js`: WhatsApp, menu móvel, animações e eventos de mensuração.
+- `robots.txt` e `sitemap.xml`: descoberta pelos mecanismos de busca.
+- `vercel.json`: cabeçalhos básicos de segurança.
 
-1. Envie o conteúdo desta pasta para a raiz de um repositório.
-2. Em **Settings → Pages**, selecione a branch (`main`) e a pasta `/root`.
-3. Aguarde o deploy — não há build, é HTML/CSS/JS puro.
+## Contatos e mensagens
 
-## Como alterar contatos
+O telefone e as mensagens contextuais dos botões de WhatsApp ficam no início de `script.js`.
+O e-mail aparece no rodapé e nos dados estruturados do `index.html`.
 
-No topo de `script.js`:
+## Mensuração
 
-- `WHATSAPP_NUMBER` — número em formato internacional (hoje `5511953875997`).
-- `WHATSAPP_MESSAGES` — mensagem pré-preenchida de cada botão (`geral`, `sites`, `ia`, `trafego`).
-- `CONTACT_EMAIL` — e-mail comercial (`contato@gestaom7.com.br`), também usado no rodapé do `index.html`.
+Os cliques são enviados para `window.dataLayer` com os eventos:
 
-## Pixels e analytics
+- `whatsapp_click`: clique de contato, incluindo o contexto do serviço;
+- `internal_navigation`: navegação entre seções.
 
-O `index.html` tem um comentário reservado no `<head>` para instalar Meta Pixel,
-Google Analytics, Google Ads Tag e Microsoft Clarity quando os IDs reais existirem.
+Para registrar os eventos em uma plataforma externa, ainda é necessário adicionar o identificador real
+do Google Tag Manager ou da ferramenta de análise escolhida. Nenhum identificador foi inventado ou
+incluído no código.
+
+## Publicação
+
+Alterações enviadas à branch `main` são publicadas automaticamente pela Vercel.
