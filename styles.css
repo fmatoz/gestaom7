@@ -112,7 +112,8 @@ p { margin-top: 0; }
 .about-copy p:first-child { margin-top: 0; }
 .about-signature { color: white !important; font-weight: 700; }
 .final-panel { padding-block: 3.5rem; }
-.final-panel > * { position: relative; z-index: 1; }
+.final-panel > :not(.glow) { position: relative; z-index: 1; }
+.final-panel .glow { position: absolute; }
 .final-panel h2 { max-width: 42rem; margin-inline: auto; }
 .final-panel .btn { margin-top: 1.8rem; }
 .final-panel .micro { margin-top: .9rem; }
