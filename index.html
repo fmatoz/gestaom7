@@ -33,7 +33,7 @@
 
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preload" href="/m7-logo.png" as="image" fetchpriority="high" />
-    <link rel="stylesheet" href="/styles.css?v=20261008" />
+    <link rel="stylesheet" href="/styles.css?v=20261104" />
     <script>document.documentElement.classList.add("js");</script>
     <script type="application/ld+json">
       {
@@ -69,7 +69,7 @@
         </a>
         <nav class="nav" id="menu-principal" aria-label="Navegação principal">
           <a href="#solucoes">Soluções</a>
-          <a href="#resultados">Resultados</a>
+          <a href="#portfolio">Portfólio</a>
           <a href="#processo">Como funciona</a>
           <a href="#sobre">Sobre</a>
         </nav>
@@ -94,7 +94,7 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-solid" data-wa="geral" href="#contato">Quero identificar oportunidades</a>
-            <a class="btn btn-outline" href="#resultados">Ver resultados reais</a>
+            <a class="btn btn-outline" href="#portfolio">Conhecer nossos projetos</a>
           </div>
           <p class="micro hero-micro">Conversa direta, sem compromisso e sem solução empurrada.</p>
         </div>
@@ -155,36 +155,75 @@
         </div>
       </section>
 
-      <section id="resultados" class="section results-section">
-        <div class="container reveal">
+      <section id="portfolio" class="section results-section portfolio-section" aria-labelledby="portfolio-heading">
+        <div class="container reveal" id="resultados">
           <div class="section-heading center">
-            <p class="eyebrow">EXPERIÊNCIA NA PRÁTICA</p>
-            <h2>Estratégias construídas para gerar movimento.</h2>
-            <p class="sub">Já ajudamos negócios a expandir, gerar demanda, vender por meio de páginas e automatizar o atendimento.</p>
+            <p class="eyebrow">QUEM JÁ FEZ PARTE DA NOSSA HISTÓRIA</p>
+            <h2 id="portfolio-heading">Negócios reais.<br /><span class="gradient">Parcerias que fazem a diferença.</span></h2>
+            <p class="sub">Experiência com dezenas de negócios. Conheça alguns dos projetos que fazem parte dessa trajetória.</p>
           </div>
-          <div class="grid grid-2 cases-grid">
-            <article class="case-card">
-              <span class="case-tag">Parceria</span>
-              <h3>Relacionamentos de longo prazo</h3>
-              <p>Clientes que seguem conosco há anos porque encontram proximidade, clareza e comprometimento.</p>
+          <div class="portfolio-grid">
+            <article class="portfolio-card">
+              <div class="portfolio-brand portfolio-brand--agricol">
+                <img src="/assets/portfolio/agricol-diesel.jpg" alt="" width="420" height="420" loading="lazy" decoding="async" />
+              </div>
+              <div class="portfolio-copy">
+                <p class="portfolio-service">Anúncios & marketplace</p>
+                <h3>Agricol Diesel</h3>
+                <p class="portfolio-description">Criação e gestão de anúncios para redes sociais e Mercado Livre.</p>
+                <div class="portfolio-result">
+                  <strong>200 anúncios criados</strong>
+                  <span>Presença digital e gestão de campanhas</span>
+                </div>
+              </div>
             </article>
-            <article class="case-card">
-              <span class="case-tag">Crescimento</span>
-              <h3>Estratégia que acompanha o negócio</h3>
-              <p>Participamos da evolução de empresas conectando presença digital, divulgação e processo comercial.</p>
+            <article class="portfolio-card">
+              <div class="portfolio-brand portfolio-brand--beijinho">
+                <img src="/assets/portfolio/beijinho-de-moca.jpg" alt="" width="420" height="420" loading="lazy" decoding="async" />
+              </div>
+              <div class="portfolio-copy">
+                <p class="portfolio-service">Tráfego pago & conteúdo</p>
+                <h3>Beijinho de Moça</h3>
+                <p class="portfolio-description">Gestão de tráfego pago, com atuação também em social media e produção de conteúdo.</p>
+                <div class="portfolio-result">
+                  <strong>Marca em movimento</strong>
+                  <span>Conteúdo e mídia para conectar com o público</span>
+                </div>
+              </div>
             </article>
-            <article class="case-card">
-              <span class="case-tag">Performance</span>
-              <h3>Campanhas e páginas orientadas à conversão</h3>
-              <p>Criamos estruturas para transformar atenção em contatos e contatos em oportunidades de venda.</p>
+            <article class="portfolio-card">
+              <div class="portfolio-brand portfolio-brand--pietro">
+                <img src="/assets/portfolio/dom-pietro.jpg" alt="" width="420" height="420" loading="lazy" decoding="async" />
+              </div>
+              <div class="portfolio-copy">
+                <p class="portfolio-service">Tráfego pago</p>
+                <h3>Dom Pietro</h3>
+                <p class="portfolio-description">Uma parceria de longa data, com campanhas que já geraram milhares de leads para a pizzaria.</p>
+                <div class="portfolio-result">
+                  <strong>Milhares de leads</strong>
+                  <span>Relacionamento contínuo e foco em resultado</span>
+                </div>
+              </div>
             </article>
-            <article class="case-card">
-              <span class="case-tag">Inovação</span>
-              <h3>Inteligência artificial aplicada à rotina</h3>
-              <p>Desenvolvemos agentes e automações adaptados ao atendimento e aos processos de cada empresa.</p>
+            <article class="portfolio-card">
+              <div class="portfolio-brand portfolio-brand--raiz">
+                <img src="/assets/portfolio/projeto-raiz.jpg" alt="" width="420" height="420" loading="lazy" decoding="async" />
+              </div>
+              <div class="portfolio-copy">
+                <p class="portfolio-service">Landing page & tráfego</p>
+                <h3>Marcenaria Projeto Raiz</h3>
+                <p class="portfolio-description">Projeto digital em desenvolvimento para uma marcenaria de alto padrão especializada em madeira maciça.</p>
+                <div class="portfolio-result">
+                  <strong>Projeto em desenvolvimento</strong>
+                  <span>Landing page e planejamento de tráfego pago</span>
+                </div>
+              </div>
             </article>
           </div>
-          <p class="results-note">O objetivo não é entregar uma ferramenta. É construir algo que continue fazendo sentido depois da entrega.</p>
+          <div class="portfolio-footer">
+            <p>Cada negócio tem uma história.<br /><strong>Vamos construir o próximo capítulo da sua?</strong></p>
+            <a class="btn btn-solid" data-wa="geral" href="#contato">Quero conversar sobre meu negócio <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
 
